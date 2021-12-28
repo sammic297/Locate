@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find My HomeChurch Location</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="floating-panel">
+        <strong>Start:</strong>
+        <input id="start" type="text" value="" placeholder="location">
+
+        <br />
+        <strong>End:</strong>
+        <select id="end">
+            <option value="4.9580033, 8.331781">CMHC1</option>
+            <option value="4.9637852, 8.330245">CMHC2</option>
+            <option value="4.9844625, 8.3478547">CMHC3</option>
+            <option value="4.9834575, 8.3414018">CMHC4</option>
+            <option value="4.9670852, 8.3535049">CMHC5</option>
+            <option value="4.9940425, 8.3184189">CMHC6</option>
+            <option value="4.9971467, 8.3443301">CMHC10</option>
+            <option value="4.9370483, 8.337065">CSHC2</option>
+            <option value="4.9431266, 8.3149015">CSHC4</option>
+        </select>
+    </div>
+    <div id="container">
+        <div id="map"></div>
+        <div id="sidebar"></div>
+    </div>
+    <div style="display: none">
+        <div id="floating-panel">
+            <strong>Start:</strong>
+            <input id="start" type="text" value="" placeholder="location">
+            <br />
+            <strong>End:</strong>
+            <select id="end">
+                <option value="4.9580033, 8.331781">CMHC1</option>
+                <option value="4.9637852, 8.330245">CMHC2</option>
+                <option value="4.9844625, 8.3478547">CMHC3</option>
+                <option value="4.9834575, 8.3414018">CMHC4</option>
+                <option value="4.9670852, 8.3535049">CMHC5</option>
+                <option value="4.9940425, 8.3184189">CMHC6</option>
+                <option value="4.9971467, 8.3443301">CMHC10</option>
+                <option value="4.9370483, 8.337065">CSHC2</option>
+                <option value="4.9431266, 8.3149015">CSHC4</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!--script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly" async></script-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHhuCy82WJW4OfPb1BSZdSddzupopDK9k&callback=initMap&v=weekly"
+        async></script>
+</body>
+
+</html>
